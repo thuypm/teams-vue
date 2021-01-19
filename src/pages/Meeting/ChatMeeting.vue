@@ -22,8 +22,19 @@ export default {
 /* .chat-body {
   height: 100vh;
 } */
+.chat-bar {
+  /* background: #fff; */
+  float: right;
+  height: 100%;
+  width: 300px;
+}
 .chat-body{
-  height: calc(100vh - 96px - 64px);
+
+  height: calc(100vh - 96px  );
+  height: -webkit-calc(100vh - 96px  );
+  height: -moz-calc(100vh - 96px  );
+  height: -o-calc(100vh - 96px  );
+  height: expression(100vh - 96px  );
 }
 .chat-footer{
   height: 96px;
@@ -31,12 +42,7 @@ export default {
 .chat-meeting {
   width: 300px;
 }
-.chat-bar {
-  background: #fff;
-  float: right;
-  height: 100%;
-  width: 300px;
-}
+
 .chat-bar > .ant-card-body {
   padding: 0 !important;
 }

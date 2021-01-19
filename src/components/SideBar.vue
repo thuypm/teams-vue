@@ -1,5 +1,5 @@
 <template>
-  <a-layout-sider v-model="collapsed" :trigger="null" collapsible>
+  <a-layout-sider v-model="collapsed"  collapsible>
     <div class="logo" />
     <a-menu theme="dark" mode="inline" :default-selected-keys="['3']">
       <a-menu-item key="1">
@@ -11,7 +11,6 @@
       <a-menu-item key="2">
         <router-link :to="'/meeting'">
           <a-icon type="wechat" />
-
           <span>Chat</span>
         </router-link>
       </a-menu-item>
@@ -29,12 +28,13 @@
         <a-icon type="experiment" />
         <span>Bài tập</span>
       </a-menu-item>
-        <a-menu-item style="" >
+      <a-menu-item style="">
         <a-icon type="experiment" />
         <span>Bài tập</span>
       </a-menu-item>
     </a-menu>
     <div />
+    
   </a-layout-sider>
 </template>
 

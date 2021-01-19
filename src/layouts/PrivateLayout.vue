@@ -2,7 +2,7 @@
   <a-layout id="components-layout-demo-custom-trigger">
     <side-bar :collapsed="collapsed" />
     <a-layout>
-      <a-layout-header style="background: #fff; padding: 0">
+      <a-layout-header v-if="false" style="background: #fff; padding: 0">
         <Header
           :collapsed="collapsed"
           @collapsed="(e) => (collapsed = !collapsed)"
@@ -29,7 +29,9 @@ export default {
     SideBar,
     Header,
   },
-
+  created() {
+    console.log(this.$route);
+  },
   data() {
     return {
       collapsed: true,

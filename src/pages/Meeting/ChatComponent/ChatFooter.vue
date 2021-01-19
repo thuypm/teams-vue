@@ -2,7 +2,7 @@
   <a-form layout="inline">
     <a-row>
       <a-form-item>
-        <a-textarea style="width: 300px"></a-textarea>
+        <a-textarea style="width: 300px; max-height: 51.6px;"></a-textarea>
       </a-form-item>
     </a-row>
     <a-row class="space-row">

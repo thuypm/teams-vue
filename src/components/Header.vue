@@ -1,13 +1,13 @@
 <template>
   <a-row>
-    <a-col :span="3">
+    <!-- <a-col :span="3">
       <a-icon
         class="trigger"
         :type="collapsed ? 'menu-unfold' : 'menu-fold'"
         @click="() => $emit('collapsed')"
       />
-    </a-col>
-    <a-col :xl="3" lg="4" :offset="18">
+    </a-col> -->
+    <a-col :xl="3" lg="4" :offset="21">
       <a-popconfirm placement="left" ok-text="Yes" cancel-text="No">
         <template slot="title">
           <p>Đăng xuất ?</p>
