@@ -14,10 +14,10 @@
         <a-radio-button value="desktop">
           <unicon name="desktop" fill="rgba(0, 0, 0, 0.65)"></unicon>
         </a-radio-button>
-        <a-radio-button value="comments">
+        <a-radio-button value="comments" @click="(e)=> $emit('show-right-tab','CHAT_TAB')">
           <unicon name="comments-alt" fill="rgba(0, 0, 0, 0.65)"></unicon>
         </a-radio-button>
-        <a-radio-button value="users" @click="(e)=> $emit('show-right-tab', )">
+        <a-radio-button value="users" @click="(e)=> $emit('show-right-tab','LIST_USER')">
           <unicon name="users-alt" fill="rgba(0, 0, 0, 0.65)"></unicon>
         </a-radio-button>
         <a-radio-button value="phone" style="background: red">
@@ -29,7 +29,9 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+
+};
 </script>
 <style scoped>
 .ant-radio-button-wrapper {

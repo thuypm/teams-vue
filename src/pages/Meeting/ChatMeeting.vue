@@ -26,7 +26,7 @@ export default {
   /* background: #fff; */
   float: right;
   height: 100%;
-  width: 300px;
+    transition: width 1s;
 }
 .chat-body{
 

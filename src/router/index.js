@@ -4,7 +4,8 @@ import PrivateLayout from '@/layouts/PrivateLayout'
 // import Chat from '@/pages/container/Chat'
 // import Signin from '@/pages/Signin'
 import AllGroup from '@/pages/AllGroup';
-import Notice from '../pages/Notice';
+import Notice from '@/pages/Notice';
+import Group from '@/pages/Group';
 // import Signup from '@/pages/Signup'
 import File from '@/pages/File'
 import Meeting from '@/pages/Meeting'
@@ -46,6 +47,11 @@ const router = new Router({
             path: 'notification',
             name: 'notification',
             component: Notice
+          },
+          {
+            path: 'group',
+            name: 'group',
+            component: Group
           },
           //   {
           //     path: 'exercise',

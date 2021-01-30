@@ -1,29 +1,27 @@
- 
 <template>
-  <div class="list-notice-pane" >
+  <div class="list-notice-pane">
     <a-list
-      item-layout="vertical"
-      size="large"
+      :loading="loading"
       :pagination="pagination"
-      class="list-notice"
-      style="padding: 10px; background: #fff; border-radius: 5px"
-      :data-source="listData"
+      item-layout="horizontal"
+      :data-source="data"
+      style="padding: 10px 25px 10px 25px; background: #fff; border-radius: 5px"
     >
-      <div slot="footer"><b>ant design vue</b> footer part</div>
+   
       <a-list-item slot="renderItem" key="item.title" slot-scope="item">
-        <template v-for="{ type, text } in actions" slot="actions">
-          <span :key="type">
-            <a-icon :type="type" style="margin-right: 8px" />
-            {{ text }}
-          </span>
-        </template>
-        <a-list-item-meta :description="item.description">
-          <a slot="title" :href="item.href">{{ item.title }}
-               <a-icon type="notification" style="color: red ;float:right"/>
-            </a>
-          <a-avatar slot="avatar" :src="item.avatar" />
-          <a-icon type="star"/>
+        <a slot="actions"> <a-icon type="check" style="margin-right: 8px" /></a>
+        <a slot="actions"> <a-icon type="read" style="margin-right: 8px" /></a>
+        <a slot="actions"><a-icon type="delete" style="margin-right: 8px" /></a>
+        <a-list-item-meta
+          description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+        >
+          <a slot="title" href="https://www.antdv.com/">{{ item.content }}</a>
+          <a-avatar
+            slot="avatar"
+            src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+          />
         </a-list-item-meta>
+        <div><a-badge status="success" text="New" /></div>
       </a-list-item>
     </a-list>
   </div>
@@ -41,28 +39,26 @@ for (let i = 0; i < 23; i++) {
       "We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.",
   });
 }
-
 export default {
   data() {
     return {
-      listData,
+      loading: false,
+      loadingMore: false,
+      showLoadingMore: true,
+      data: listData,
       pagination: {
         onChange: (page) => {
           console.log(page);
         },
-        pageSize: 2,
+        pageSize: 6,
       },
-      actions: [
-        { type: "check", text: "Đã đọc" },
-        { type: "read", text: "Đánh dấu là chưa đọc" },
-        { type: "delete", text: "Xóa" },
-      ],
     };
   },
+  methods: {},
 };
 </script>
-<style scoped>
-.list-notice-pane{
-padding: 20px 80px 0 80px
+<style>
+.list-notice-pane {
+  padding: 20px 7% 20px 7%;
 }
 </style>

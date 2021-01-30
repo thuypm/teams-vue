@@ -9,7 +9,7 @@ import {
   uniMicrophone, uniMicrophoneSlash,
   uniDesktop, uniDesktopSlash,
   uniComments, uniUsersAlt, uniPhone,
-  uniCommentsAlt
+  uniCommentsAlt, uniCornerUpLeftAlt
 } from 'vue-unicons/src/icons'
 
 Unicon.add([
@@ -17,7 +17,7 @@ Unicon.add([
   uniMicrophone, uniMicrophoneSlash,
   uniDesktop, uniDesktopSlash,
   uniComments, uniUsersAlt,
-
+  uniCornerUpLeftAlt,
   uniPhone, uniCommentsAlt
   , uniUsersAlt
 ])

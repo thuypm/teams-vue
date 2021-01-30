@@ -65,7 +65,7 @@ export default {};
 </script>
 <style  scoped>
 .chat-body {
-  overflow-y: scroll;
+  overflow-y: scroll; 
 }
 .send-message {
   padding: 5px;

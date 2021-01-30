@@ -10,20 +10,20 @@
       <a-col :span="3">
         <a-form-item>
           <a-upload name="logo" action="/upload.do" list-type="picture">
-            <a-icon type="paper-clip"  class="send-icon"/>
+            <a-icon type="paper-clip"  class="action-post-icon"/>
           </a-upload>
         </a-form-item>
       </a-col>
        <a-col :span="3">
         <a-form-item>
           <a-upload name="logo" action="/upload.do" list-type="picture">
-           <a-icon type="file-image"  class="send-icon" />
+           <a-icon type="file-image"  class="action-post-icon" />
           </a-upload>
         </a-form-item>
       </a-col>
       <a-col :span="2" offset="16">
         <a-form-item>
-          <a-icon type="right-square" class="send-icon"/>
+          <a-icon type="right-square" class="action-post-icon"/>
         </a-form-item>
       </a-col>
       <!-- </a-col> -->
@@ -34,13 +34,7 @@
 export default {};
 </script>
 <style  scoped>
-.send-icon{
-  font-size: 20px;
-}
-.send-icon:hover{
-  cursor: pointer;
-  color: #1890ff
-}
+
 .space-row {
   padding: 0 5px 0 5px;
 

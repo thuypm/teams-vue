@@ -25,7 +25,9 @@
         <span>File</span>
       </a-menu-item>
       <a-menu-item key="5">
+        <router-link :to="'/group'">
         <a-icon type="experiment" />
+        </router-link>
         <span>Bài tập</span>
       </a-menu-item>
       <a-menu-item style="">
